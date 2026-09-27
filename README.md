@@ -1,6 +1,6 @@
 # Tool Library API
 
-Used MDN docs to find status codes and error handling and learn about REST API and GET, PUT, POST, and DELETE work.
+Used MDN docs to find status codes and error handling and learn about REST API and GET, PUT, POST, and DELETE work!
 
 Live: <!-- your Render address, for example https://cpan212-lab2-jane-doe.onrender.com/api/tools -->
 
