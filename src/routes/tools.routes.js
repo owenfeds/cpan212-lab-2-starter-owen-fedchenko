@@ -28,7 +28,15 @@ toolsRouter.get('/', (req, res) => {
   res.json({ data: matching });
 });
 
+toolsRouter.get('/:id', (req, res) => {
+  const tool = tools.find((tool) => tool.id === req.params.id);
 
+  if (!tool) {
+    return res.status(404).json({ error: { message: 'Tool not found' } });
+  }
+
+  res.json({ data: tool });
+});
 
 // TODO (you): STEP 5. POST /api/tools adds a tool.
 
