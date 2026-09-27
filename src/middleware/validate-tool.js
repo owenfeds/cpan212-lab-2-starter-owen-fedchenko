@@ -40,6 +40,7 @@ export function validateTool(req, res, next) {
   if (Object.keys(errors).length > 0) {
     return res.status(400).json({ error: { message: 'Validation failed', details: errors } });
   }
+  // First commit after step 3 complete so adding this line to mark step 3 as completed.
 
   // Only these five fields are passed on, so an "id" or any other extra field in the body is never saved.
   req.body = {
