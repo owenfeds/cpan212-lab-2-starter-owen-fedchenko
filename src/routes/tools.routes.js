@@ -46,5 +46,15 @@ toolsRouter.post('/', validateTool, (req, res) => {
 });
 
 // TODO (you): STEP 6. PUT /api/tools/:id changes a tool.
+toolsRouter.put('/:id', validateTool, (req, res) => {
+  const tool = tools.find((tool) => tool.id === req.params.id);
+
+  if (!tool) {
+    return res.status(404).json({ error: { message: 'Tool not found' } });
+  }
+
+  Object.assign(tool, req.body);
+  res.json({ data: tool });
+});
 
 // TODO (you): STEP 7. DELETE /api/tools/:id removes a tool.
