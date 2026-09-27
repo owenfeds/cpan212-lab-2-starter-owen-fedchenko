@@ -1,6 +1,6 @@
 # Tool Library API
 
-<!-- Replace this line with one or two sentences about the project in your own words. -->
+Used MDN docs to find status codes and error handling and learn about REST API and GET, PUT, POST, and DELETE work.
 
 Live: <!-- your Render address, for example https://cpan212-lab2-jane-doe.onrender.com/api/tools -->
 
@@ -34,4 +34,4 @@ This tries every route and prints which checks pass.
 
 ## AI use
 
-<!-- List each AI tool you used and what you used it for, or write "No AI tools used." -->
+No AI tools used
